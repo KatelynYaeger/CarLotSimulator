@@ -3,6 +3,13 @@ namespace CarLotSimulator
 {
     public class Car
     {
+        public Car()
+        {
+            CarLot.NumberOfCars++;
+        }
+
+
+
         //Create a seperate class file called Car - Done
         //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable - Done
         //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise() - Done
@@ -23,28 +30,23 @@ namespace CarLotSimulator
             IsDriveable = isDriveable;
         }
 
+            public int Year { get; set; }
+            public string Make { get; set; }
+            public string Model { get; set; }
+            public string EngineNoise { get; set; }
+            public string HonkNoise { get; set; }
+            public bool IsDriveable { get; set; }
 
-        public Car()
-        {  
-        }
-       
-        public int Year { get; set; }
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public string EngineNoise { get; set; }
-        public string HonkNoise { get; set; }
-        public bool IsDriveable { get; set; }
+            public void MakeEngineNoise(string EngineNoise)
+            {
+                Console.WriteLine(EngineNoise);
+            }
 
-        public void MakeEngineNoise(string EngineNoise)
-        {
-            Console.WriteLine(EngineNoise);
-        }
-
-        public void MakeHonkNoise(string honk)
-        {
-            Console.WriteLine(honk);
-        }
-
+            public void MakeHonkNoise(string honk)
+            {
+                Console.WriteLine(honk);
+            }
+        
     }
 }
 

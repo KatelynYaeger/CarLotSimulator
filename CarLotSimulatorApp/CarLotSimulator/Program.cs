@@ -27,7 +27,6 @@ namespace CarLotSimulator
             var familyCar = new Car(2001, "Honda", "Civic", "Crunch", "Beep", false);
 
             var fixerUpper = new Car()
-
             {
                 Year = 2018,
                 Make = "VW",
@@ -35,7 +34,6 @@ namespace CarLotSimulator
                 EngineNoise = "GRRRR",
                 HonkNoise = "Meep",
                 IsDriveable = false
-
             };
 
 
@@ -57,7 +55,7 @@ namespace CarLotSimulator
                 Console.WriteLine($"Year: {vehicle.Year} Make: {vehicle.Make} and Model: {vehicle.Model}");
             }
 
-
+            Console.WriteLine($"Number of cars created: {CarLot.NumberOfCars}");
 
             //*************BONUS*************//
 
